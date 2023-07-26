@@ -1,0 +1,231 @@
+.bubbles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.bubble {
+  position: absolute;
+  bottom: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  opacity: 1;
+  animation: floating 0.5s 3 ease-in;
+}
+
+.bubble:nth-child(1) {
+  width: 86px;
+  height: 86px;
+  right: -74%;
+  animation-duration: 2s;
+  animation-delay: 0.1s;
+}
+
+.bubble:nth-child(2) {
+  width: 70px;
+  height: 70px;
+  right: -55%;
+  animation-duration: 1.5s;
+  animation-delay: 0.1s;
+}
+
+.bubble:nth-child(3) {
+  width: 75px;
+  height: 75px;
+  right: -36%;
+  animation-duration: 2s;
+  animation-delay: 0.1;
+}
+
+.bubble:nth-child(4) {
+  width: 70px;
+  height: 70px;
+  left: 35%;
+  animation-duration: 2.5s;
+  animation-delay: 0.1s;
+}
+
+.bubble:nth-child(5) {
+  width: 65px;
+  height: 65px;
+  right: 40%;
+  animation-duration: 3s;
+  animation-delay: 0,3s;
+}
+
+.bubble:nth-child(6) {
+  width: 80px;
+  height: 80px;
+  right: 45%;
+  animation-duration: 1.5s;
+  animation-delay: 0.5s;
+}
+
+.bubble:nth-child(7) {
+  width: 70px;
+  height: 70px;
+  left: 10%;
+  animation-duration: 2s;
+  animation-delay: 0.7s;
+}
+
+.bubble:nth-child(8) {
+  width: 65px;
+  height: 65px;
+  left: 15%;
+  animation-duration: 2.5s;
+  animation-delay: 0.9s;
+}
+
+.bubble:nth-child(9) {
+  width: 65px;
+  height: 65px;
+  left: 50%;
+  animation-duration: 3s;
+  animation-delay: 0.9s;
+}
+
+.bubble:nth-child(10) {
+  width: 80px;
+  height: 80px;
+  left: 60%;
+  animation-duration: 1.5s;
+  animation-delay: 1s;
+}
+
+.bubble:nth-child(11) {
+  width: 60px;
+  height: 60px;
+  left: 10%;
+  animation-duration: 2s;
+  animation-delay: 1s;
+}
+
+.bubble:nth-child(12) {
+  width: 75px;
+  height: 75px;
+  left: 35%;
+  animation-duration: 1.5s;
+  animation-delay: 1.4s;
+}
+
+.bubble:nth-child(13) {
+  width: 75px;
+  height: 75px;
+  left: 70%;
+  animation-duration: 2.5s;
+  animation-delay: 1.2s;
+}
+
+.bubble:nth-child(14) {
+  width: 70px;
+  height: 70px;
+  left: 60%;
+  animation-duration: 2s;
+  animation-delay: 1.8s;
+}
+
+.bubble:nth-child(15) {
+  width: 75px;
+  height: 75px;
+  right: 40%;
+  animation-duration: 3s;
+  animation-delay: 1.8s;
+}
+
+.bubble:nth-child(16) {
+  width: 85px;
+  height: 85px;
+  left: 80%;
+  animation-duration: 2s;
+  animation-delay: 2s;
+}
+
+.bubble:nth-child(17) {
+  width: 80px;
+  height: 80px;
+  right: -25%;
+  animation-duration: 1.5s;
+  animation-delay: 2s;
+}
+
+.bubble:nth-child(18) {
+  width: 70px;
+  height: 70px;
+  left: 40%;
+  animation-duration: 2.5s;
+  animation-delay: 2.2s;
+}
+
+.bubble:nth-child(19) {
+  width: 70px;
+  height: 70px;
+  right: -55%;
+  animation-duration: 2s;
+  animation-delay: 2.2s;
+}
+
+.bubble:nth-child(20) {
+  width: 70px;
+  height:70px;
+  right: -70%;
+  animation-duration: 1.5s;
+  animation-delay: 2.4s;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+/* Random positioning for the remaining child bubbles */
+/* .bubble:nth-child(n+21) {
+  width: calc(20px + 60px * random());
+  height: calc(20px + 60px * random());
+  left: calc(5% + 90% * random());
+  right: calc(5% + 90% * random());
+  animation-duration: calc(1s + 4s * random());
+  animation-delay: calc(1s + 4s * random());
+} */
+
+
+/* Add more styles for additional child bubbles */
+
+@keyframes floating {
+  0% {
+    bottom: -100px;
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+  100% {
+    bottom: 1080px;
+    transform: translateX(-100px);
+  }
+}
+
+
+  input[type="range"] {
+    -webkit-appearance: none; /* Hides the default styling in WebKit browsers */
+    width: 100%; /* Sets the width of the range slider */
+    height: 6px; /* Sets the height of the range slider */
+    background-color: red; /* Sets the background color to red */
+    outline: none; /* Removes the default focus outline */
+    opacity: 0.7; /* Adjusts the opacity of the range slider */
+    border-radius: 5px; /* Adds border radius */
+  }
+
+  /* Styling the range slider thumb */
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Hides the default thumb in WebKit browsers */
+    width: 16px; /* Sets the width of the thumb */
+    height: 16px; /* Sets the height of the thumb */
+    background-color: red; /* Sets the background color of the thumb */
+    border-radius: 50%; /* Makes the thumb circular */
+    cursor: pointer; /* Changes the cursor to a pointer */
+  }
