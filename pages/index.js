@@ -388,7 +388,7 @@ export default function Home({}) {
               <div className="flex flex-row items-center">
                 <div className="ml-4" onClick={onPlayPauseVideoPress}>
                   <Image
-                    src={isPlaying ? "./pauseIcon.png" : "./playIcon.png"}
+                    src={isPlaying ? "../public/pauseIcon.png" : "../public/playIcon.png"}
                     width={25}
                     height={25}
                     alt={isPlaying ? "pause" : "play"}
